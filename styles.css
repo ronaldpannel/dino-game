@@ -1,0 +1,65 @@
+.title {
+  text-align: center;
+}
+
+.game-board {
+  height: 300px;
+  width: 600px;
+  border: solid black 3px;
+  background-image: url(desert-bg.jpg);
+  background-position: cover;
+  background-position: bottom;
+  background-repeat: none;
+  margin: auto;
+}
+.dino {
+  height: 75px;
+  width: 75px;
+  background-image: url(Dino-green.ico);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  top: 225px;
+}
+.rock {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: 175px;
+  left: 550px;
+  background-image: url(cactus.ico);
+  background-position: center;
+  background-size: cover;
+  animation-name: rock;
+  animation-duration: 3.33s;
+  animation-iteration-count: infinite;
+}
+@keyframes rock {
+  0% {
+    left: 550px;
+  }
+  100% {
+    left: -550px;
+  }
+}
+h2 {
+  text-align: center;
+}
+.jump-animation {
+  animation-name: jump;
+  animation-duration: 0.5s;
+}
+@keyframes jump {
+  0% {
+    top: 225px;
+  }
+  50% {
+    top: 75px;
+  }
+  75% {
+    top: 75%;
+  }
+  100% {
+    top: 225px;
+  }
+}
